@@ -1,0 +1,1 @@
+/home/dwm/configs/dotfiles/init.lua
