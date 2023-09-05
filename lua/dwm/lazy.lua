@@ -37,7 +37,7 @@ require("lazy").setup({
 	    {'L3MON4D3/LuaSnip'},     -- Required
 	}
     },
-    --'ErichDonGubler/lsp_lines.nvim', -- Errors/Messages
+    'ErichDonGubler/lsp_lines.nvim', -- Errors/Messages
 
     -- Visual tools
     'unblevable/quick-scope', -- Plugin to highlight fastest jumps to words
@@ -69,8 +69,7 @@ require("lualine").setup({
     }
 })
 
---require("lsp_lines").setup()
---require("rust-tools").setup()
+require("lsp_lines").setup()
 require("lualine").setup()
 require("catppuccin").setup({
     integrations = {
