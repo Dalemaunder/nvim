@@ -46,6 +46,7 @@ vim.diagnostic.config({virtual_text = false})
 -- Configure folding
 vim.opt.foldcolumn = '3'
 vim.opt.foldmethod = "indent"
+vim.opt.foldlevel = 99
 
 ----[ Neomake Configuration ]----
 -- When writing a buffer (no delay), and on normal mode changes (after 750ms).
