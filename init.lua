@@ -8,9 +8,10 @@ vim.g.loaded_netrwPlugin = 1
 -- Turn on syntax highlighting
 vim.opt.syntax = "on"
 
--- Turn on relative line numbers
+-- Configure line and number settings
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
 
 -- Configure tab settings
 vim.opt.tabstop = 8
@@ -47,6 +48,9 @@ vim.diagnostic.config({virtual_text = false})
 vim.opt.foldcolumn = '3'
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
+
+-- Parenthesis insertion
+vim.keymap.set ("i", "(", "()<Left>")
 
 ----[ Neomake Configuration ]----
 -- When writing a buffer (no delay), and on normal mode changes (after 750ms).
