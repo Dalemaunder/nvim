@@ -6,6 +6,10 @@ lsp.ensure_installed({
     'rust_analyzer',
     'pyright',
     'bashls',
+    'html',
+    'cssls',
+    'tsserver',
+    'zls',
 })
 
 --lsp.on_attach(function(client, bufnr)
