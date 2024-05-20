@@ -2,6 +2,10 @@
 vim.g.mapleader = '\\'
 -- Toggle NerdTree
 vim.keymap.set ("n", "<Leader>t", ":NvimTreeToggle<CR>")
+-- Close current buffer and return the the previous
+vim.keymap.set ("n", "<Leader>c", ":bp|bd #<CR>")
+-- List the open buffers and allow a number to be pressed to move to it.
+vim.keymap.set ("n", "<Leader>b", ":buffers<CR>:buffer<Space>")
 -- Clear search highlighting
 vim.cmd [[nnoremap <nowait><silent> <F1> :noh<CR>]]
 
